@@ -19,5 +19,5 @@
   command: bash /tmp/script.rpm.sh 
 
 - name: Instalando Gitlab CE
-  apt: name=gitlab-ce state=latest
+  yum: name=gitlab-ce state=latest
 ...
