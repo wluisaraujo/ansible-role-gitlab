@@ -7,15 +7,16 @@
           - openssh-clients 
           - openssh-server 
           - policycoreutils 
+          - policycoreutils-python 
           - postfix 
 
 - name: Baixando script de repositorios do Gitlab 
   get_url:
           url: https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh
-          dest: /tmp/script.deb.sh
+          dest: /tmp/script.rpm.sh
 
 - name: Executando script de repositorio
-  command: bash /tmp/script.deb.sh 
+  command: bash /tmp/script.rpm.sh 
 
 - name: Instalando Gitlab CE
   apt: name=gitlab-ce state=latest
