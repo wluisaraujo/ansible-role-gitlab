@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-gitlab.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-gitlab)
 ---
-# IaC: with [Ansible](https://www.ansible) role to install and configure [Gitlab SCM](https://gitlab.com)
+# IaC: with [Ansible](https://www.ansible.com) role to install and configure [Gitlab SCM](https://gitlab.com)
 ------------
 
 Description
