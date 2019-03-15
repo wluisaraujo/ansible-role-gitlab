@@ -13,7 +13,7 @@ services:
 
 env:
   global:
-    - ROLE_NAME: iac-ansible-jenkins
+    - ROLE_NAME: iac-ansible-gitlab
     - ANSIBLE_ACTION_WARNINGS: "False"
     - ANSIBLE_COMMAND_WARNINGS: "False"
     - ANSIBLE_DEPRECATION_WARNINGS: "False"
