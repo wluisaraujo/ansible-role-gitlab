@@ -12,12 +12,13 @@ services:
  - docker
 
 env:
- - global:
-     ANSIBLE_ACTION_WARNINGS="False"
-     ANSIBLE_COMMAND_WARNINGS="False"
-     ANSIBLE_DEPRECATION_WARNINGS="False"
-     ANSIBLE_SYSTEM_WARNINGS="False"
-     ANSIBLE_HOST_KEY_CHECKING="False"
+  global:
+    - ROLE_NAME: iac-ansible-jenkins
+    - ANSIBLE_ACTION_WARNINGS: "False"
+    - ANSIBLE_COMMAND_WARNINGS: "False"
+    - ANSIBLE_DEPRECATION_WARNINGS: "False"
+    - ANSIBLE_SYSTEM_WARNINGS: "False"
+    - ANSIBLE_HOST_KEY_CHECKING: "False"
      
  - distribution: centos
    version: 7

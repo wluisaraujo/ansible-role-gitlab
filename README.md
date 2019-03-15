@@ -28,11 +28,13 @@ Example Playbook
 ```yaml
 ---
 - hosts: localhost
+  vars_files:
+    - vars/main.yml
   vars:
-    - name: value
+    - gitlab_external_url: "http://gitlab.example.com" 
   roles:
     - iac-ansible-gitlab
-...    
+...
 ```
 
 License

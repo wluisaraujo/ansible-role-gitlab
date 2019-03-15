@@ -1,7 +1,7 @@
 galaxy_info:
   author: w.luis.araujo
   description: Install Gitlab CE
-  company: Personal
+  company: LUSAR
   license: license (GPLv3)
 
   min_ansible_version: 2
@@ -9,13 +9,17 @@ galaxy_info:
   platforms:
   - name: EL
     versions:
-    - all
+    - 7
   - name: Debian
     versions:
     - all
 
   galaxy_tags:
      - gitlab
+     - git
+     - scm
+     - repository
+     - ci
 
   dependencies: []
 

@@ -12,11 +12,11 @@
 
 - name: Baixando script de repositorios do Gitlab 
   get_url:
-          url: http://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh
-          dest: /tmp/script.rpm.sh
+          url: "{{ gitlab_repository_installation_script_url }}"
+          dest: /tmp/gitlab_install_repository.sh
 
 - name: Executando script de repositorio
-  command: bash /tmp/script.rpm.sh 
+  command: bash /tmp/gitlab_install_repository.sh 
 
 - name: Instalando Gitlab CE
   yum: name=gitlab-ce state=latest

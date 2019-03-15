@@ -1,10 +1,7 @@
 ---
 # tasks file for iac-ansible-gitlab
-- name:  Instala o Gitlab CE (OS Base Debian)
-  import_tasks: base-ubuntu.yml
-  when: (ansible_os_family == "Debian")
 
-- name:  Instala o Gitlab CE (OS Base RedHat)
-  import_tasks: base-redhat.yml
-  when: (ansible_os_family == "RedHat")
+- name:  Instala o Gitlab no {{ ansible_os_family }}
+  include_tasks: base-{{ ansible_os_family }}.yml
+  when: ( ansible_system == "Linux" )
 ...
