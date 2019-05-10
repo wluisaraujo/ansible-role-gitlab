@@ -1,7 +1,7 @@
 galaxy_info:
   author: w.luis.araujo
   description: Install Gitlab CE
-  company: LUSAR
+  company: LUSAR | wluisaraujo.github.io
   license: license (GPLv3)
 
   min_ansible_version: 2.0
