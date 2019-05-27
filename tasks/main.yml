@@ -3,5 +3,5 @@
 
 - name:  Instala o Gitlab no {{ ansible_os_family }}
   include_tasks: base-{{ ansible_os_family }}.yml
-  when: ( ansible_system == "Linux" )
+  when: ansible_system == "Linux"
 ...
