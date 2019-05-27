@@ -1,23 +1,27 @@
 ---
 # tasks file for iac-ansible-gitlab
 - name: Instalar Dependencias
-  yum: name={{ item }} state=latest
-  with_items:
-          - curl 
-          - openssh-clients 
-          - openssh-server 
-          - policycoreutils 
-          - policycoreutils-python 
-          - postfix 
+  yum: 
+    name: "{{ item }}" 
+    state: latest
+  loop:
+    - curl 
+    - openssh-clients 
+    - openssh-server 
+    - policycoreutils 
+    - policycoreutils-python 
+    - postfix 
 
 - name: Baixando script de repositorios do Gitlab 
   get_url:
-          url: "{{ gitlab_repository_installation_script_url }}"
-          dest: /tmp/gitlab_install_repository.sh
+    url: "{{ gitlab_repository_installation_script_url }}"
+    dest: /tmp/gitlab_install_repository.sh
 
 - name: Executando script de repositorio
   command: bash /tmp/gitlab_install_repository.sh 
 
 - name: Instalando Gitlab CE
-  yum: name=gitlab-ce state=latest
+  yum: 
+    name: gitlab-ce 
+    state: latest
 ...
