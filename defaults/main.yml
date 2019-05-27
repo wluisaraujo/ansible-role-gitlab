@@ -1,5 +1,6 @@
 ---
 # defaults file for iac-ansible-gitlab
+gitlab_repository_installation_script_url: "https://packages.gitlab.com/install/repositories/gitlab/{{ gitlab_edition }}/script.deb.sh"
 # General config.
 gitlab_external_url: "https://gitlab.example.com"
 gitlab_git_data_dir: "/var/opt/gitlab/git-data"
