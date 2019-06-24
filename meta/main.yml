@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: iac-ansible-gitlab
   author: w.luis.araujo
   description: Install Gitlab CE
   company: LUSAR | wluisaraujo.github.io
