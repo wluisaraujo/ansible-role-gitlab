@@ -1,5 +1,5 @@
 ---
-# handlers file for iac-ansible-gitlab
+# handlers file for gitlab
 
 - name: Restart gitlab
   command: gitlab-ctl reconfigure

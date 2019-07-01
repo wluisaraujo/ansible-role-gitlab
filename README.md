@@ -34,7 +34,7 @@ Example Playbook
   vars:
     - gitlab_external_url: "http://gitlab.example.com" 
   roles:
-    - iac-ansible-gitlab
+    - gitlab
 ...
 ```
 

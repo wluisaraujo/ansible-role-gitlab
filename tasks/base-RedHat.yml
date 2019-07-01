@@ -1,5 +1,5 @@
 ---
-# tasks file for iac-ansible-gitlab
+# tasks file for gitlab
 - name: Instalar Dependencias
   yum: 
     name: "{{ item }}" 

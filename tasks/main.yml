@@ -1,5 +1,5 @@
 ---
-# tasks file for iac-ansible-gitlab
+# tasks file for gitlab
 
 - name:  Instala o Gitlab no {{ ansible_os_family }}
   include_tasks: base-{{ ansible_os_family }}.yml
