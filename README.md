@@ -1,4 +1,4 @@
-[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-GitLab-blue.svg)](https://galaxy.ansible.com/wluisaraujo/gitlab) [![Build Status](https://travis-ci.org/wluisaraujo/ansible-role-globodns.svg?branch=master)](https://travis-ci.org/wluisaraujo/ansible-role-globodns)
+[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-GitLab-blue.svg)](https://galaxy.ansible.com/wluisaraujo/gitlab) [![Build Status](https://travis-ci.org/wluisaraujo/ansible-role-gitlab.svg?branch=master)](https://travis-ci.org/wluisaraujo/ansible-role-gitlab)
 
 # IaC: with [Ansible](https://www.ansible.com) role to install and configure [Gitlab SCM](https://gitlab.com)
 ------------
