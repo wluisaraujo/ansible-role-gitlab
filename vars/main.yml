@@ -2,3 +2,14 @@
 # vars file for gitlab
 gitlab_repository_installation_script_url: "https://packages.gitlab.com/install/repositories/gitlab/{{ gitlab_edition }}/script.deb.sh"
 ...
+##
+server_url: 
+server_mail_from: 
+server_mail_to: 
+server_db_name:
+server_db_user:
+server_db_pass:
+server_db_host:
+server_db_port: 
+server_smtp_addr: 
+server_smtp_port: 

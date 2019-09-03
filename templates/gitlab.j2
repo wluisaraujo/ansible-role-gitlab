@@ -1,18 +1,18 @@
 ##
-external_url 'http://scm.example.com.br'
+external_url '{{ server_url }}'
 gitlab_rails['gitlab_email_enabled'] = true
-gitlab_rails['gitlab_email_from'] = 'gitlab@example.com.br'
-gitlab_rails['gitlab_email_reply_to'] = 'noreply@example.com.br'
+gitlab_rails['gitlab_email_from'] = '{{ server_mail_from }}'
+gitlab_rails['gitlab_email_reply_to'] = '{{ server_mail_to }}'
 gitlab_rails['auto_migrate'] = true
 gitlab_rails['rake_cache_clear'] = true
 gitlab_rails['db_adapter'] = "postgresql"
-gitlab_rails['db_database'] = "my_database"
-gitlab_rails['db_username'] = "my_sgdb_user"
-gitlab_rails['db_password'] = "my_password"
-gitlab_rails['db_host'] = "sgdb-server.example.com.br"
-gitlab_rails['db_port'] = "5432"
+gitlab_rails['db_database'] = "{{ server_db_name }}" 
+gitlab_rails['db_username'] = "{{ server_db_user }}"
+gitlab_rails['db_password'] = "{{ server_db_pass }}"
+gitlab_rails['db_host'] = "{{ server_db_host }}"
+gitlab_rails['db_port'] = "{{ server_db_port }}"
 gitlab_rails['smtp_enable'] = true
-gitlab_rails['smtp_address'] = "smpt-server.example.com.br"
-gitlab_rails['smtp_port'] = 465
+gitlab_rails['smtp_address'] = "{{ server_smtp_addr }}"
+gitlab_rails['smtp_port'] = "{{ server_smtp_port }}"
 postgresql['enable'] = false
 nginx['enable'] = true
