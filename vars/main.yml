@@ -3,13 +3,20 @@
 gitlab_repository_installation_script_url: "https://packages.gitlab.com/install/repositories/gitlab/{{ gitlab_edition }}/script.deb.sh"
 ...
 ##
-server_url: 
-server_mail_from: 
-server_mail_to: 
-server_db_name:
-server_db_user:
-server_db_pass:
-server_db_host:
-server_db_port: 
-server_smtp_addr: 
-server_smtp_port: 
+external_url '{{ server_url }}'
+gitlab_rails['gitlab_email_enabled'] = true
+gitlab_rails['gitlab_email_from'] = '{{ server_mail_from }}'
+gitlab_rails['gitlab_email_reply_to'] = '{{ server_mail_to }}'
+gitlab_rails['auto_migrate'] = true
+gitlab_rails['rake_cache_clear'] = true
+gitlab_rails['db_adapter'] = "postgresql"
+gitlab_rails['db_database'] = "{{ server_db_name }}" 
+gitlab_rails['db_username'] = "{{ server_db_user }}"
+gitlab_rails['db_password'] = "{{ server_db_pass }}"
+gitlab_rails['db_host'] = "{{ server_db_host }}"
+gitlab_rails['db_port'] = "{{ server_db_port }}"
+gitlab_rails['smtp_enable'] = true
+gitlab_rails['smtp_address'] = "{{ server_smtp_addr }}"
+gitlab_rails['smtp_port'] = "{{ server_smtp_port }}"
+postgresql['enable'] = false
+nginx['enable'] = true
