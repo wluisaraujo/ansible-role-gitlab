@@ -16,8 +16,12 @@ Requirements
 Installation
 ------------
 
+Installation
+------------
+
 ```console
 vagrant@localhost:~$ ansible-galaxy install wluisaraujo.gitlab
+vagrant@localhost:~$ ansible-galaxy install -r wluisaraujo.gitlab/requirements.txt
 ```
 
 Role Variables
